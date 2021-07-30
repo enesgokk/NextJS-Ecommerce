@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind screens;
+
 
 @layer components {
   .link {
@@ -14,11 +14,19 @@
     @apply p-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400
     border-yellow-300 rounded-sm focus:outline-none focus:ring-2
     focus:ring-yellow-500 active:from-yellow-500;
-
   }
+  
 }
 .gray-1{
   @apply bg-gray-100;
+}
+
+.disabledButton{
+  @apply from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed;
+}
+
+.checkFlex{
+  @apply lg:flex max-w-screen-2xl mx-auto;
 }
 
 /*
